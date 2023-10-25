@@ -1,6 +1,7 @@
 package main;
 
 public class StringCalculator {
-    public String[] split(String s) {
+    public String[] split(String text) {
+        return text.split(",");
     }
 }

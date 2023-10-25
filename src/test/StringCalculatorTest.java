@@ -1,8 +1,10 @@
 import main.StringCalculator;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class StringCalculatorTest {
 
+    @Test
     public void testSplit() throws Exception {
         StringCalculator cal = new StringCalculator();
         String[] result = cal.split("1,2,3");
