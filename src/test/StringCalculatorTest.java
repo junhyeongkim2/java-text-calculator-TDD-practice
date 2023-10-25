@@ -2,11 +2,11 @@ import main.StringCalculator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class StringCalculatorTest  {
+public class StringCalculatorTest {
 
     private StringCalculator cal;
 
-    StringCalculatorTest(){
+    StringCalculatorTest() {
         cal = new StringCalculator();
     }
 
@@ -36,6 +36,12 @@ public class StringCalculatorTest  {
         StringCalculator cal = new StringCalculator();
         String[] result = cal.split("1,2\n3");
         Assertions.assertArrayEquals(new String[]{"1", "2", "3"}, result);
+    }
+
+    @Test
+    public void testToInt() throws Exception {
+        int[] result = cal.toInt(new String[]{"1","2"});
+        Assertions.assertArrayEquals(new int []{1,2}, result);
     }
 
 
