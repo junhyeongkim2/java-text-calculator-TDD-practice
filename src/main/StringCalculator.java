@@ -10,6 +10,12 @@ public class StringCalculator {
     }
 
     public int[] toInt(String[] values) {
+
+        if(values==null){
+            return new int[]{};
+        }
+
+
         int[]numbers = new int[values.length];
 
         for (int i = 0 ; i < values.length; i++){

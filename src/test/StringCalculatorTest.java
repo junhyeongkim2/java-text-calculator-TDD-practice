@@ -42,6 +42,16 @@ public class StringCalculatorTest {
     public void testToInt() throws Exception {
         int[] result = cal.toInt(new String[]{"1","2"});
         Assertions.assertArrayEquals(new int []{1,2}, result);
+
+        result = cal.toInt(new String[]{});
+        Assertions.assertArrayEquals(new int[]{},result);
+
+        result = cal.toInt(null);
+        Assertions.assertArrayEquals(new int[]{},result);
+
+
+
+
     }
 
 
