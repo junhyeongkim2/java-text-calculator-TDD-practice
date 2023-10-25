@@ -20,4 +20,12 @@ public class StringCalculatorTest {
     }
 
 
+    @Test
+    public void testSplitWhenNewLineAndComma() throws Exception {
+        StringCalculator cal = new StringCalculator();
+        String[] result = cal.split("1,2\n3");
+        Assertions.assertArrayEquals(new String[]{"1", "2", "3"}, result);
+    }
+
+
 }
